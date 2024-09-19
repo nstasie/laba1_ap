@@ -22,15 +22,9 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int M;
         
-        if (args.length > 0) {
-            M = Integer.parseInt(args[0]);
-        } else {
-            // Якщо аргументи не передано, просимо користувача ввести
             System.out.print("Введіть кількість чисел Люка: ");
-            M = scanner.nextInt();
-        }
+            int M = scanner.nextInt();
 
         List<LucasNumber> lucasNumbers = new ArrayList<>();
 
